@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { navLinks } from "@/data/portfolio";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [visible, setVisible] = useState(true);
@@ -44,6 +45,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+          <ThemeToggle />
         </div>
       </nav>
     </header>
